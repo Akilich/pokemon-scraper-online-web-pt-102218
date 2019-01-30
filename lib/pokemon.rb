@@ -4,9 +4,9 @@ class Pokemon
     @name = name
     @type = type
     @db = db
-end
+  end
 
 def self.save(id, name, type, db)
-  database_connection.execute("INSERT INTO pokemon (id, name, db) VALUES (?, ?, ?)",name, breed, age)
+  database_connection.execute("INSERT INTO pokemon (id, name, db) VALUES (?, ?, ?)",id, name, db)
   end
 end
